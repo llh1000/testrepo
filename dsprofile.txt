@@ -1,0 +1,5 @@
+laurie = data.frame(cat = c("Computer Programming", "Math", "Statistics", "Machine Learning", "Domain Expertise", "Communication and Presentation Skills", "Data Visualization"), rate = c(2, 4, 3, 2, 4, 3, 3))
+> laurie
+> library(stringr)
+> laurie$newcat = str_wrap(laurie$cat, width = 14)
+> barplot(laurie$rate, names = laurie$newcat)
